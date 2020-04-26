@@ -1,6 +1,5 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
-import {Glyphicon, MenuItem, Nav, Navbar, NavDropdown, NavItem, OverlayTrigger, Tooltip, Grid,} from 'react-bootstrap';
+import {Glyphicon, Grid, MenuItem, Nav, Navbar, NavDropdown, NavItem, OverlayTrigger, Tooltip,} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
 
 import Contents from './Contents.jsx';
@@ -33,7 +32,9 @@ function NavBar() {
                     title={<Glyphicon glyph="option-vertical"/>}
                     noCaret
                 >
-                    <MenuItem>About</MenuItem>
+                    <LinkContainer to={"/about"}>
+                        <MenuItem>About</MenuItem>
+                    </LinkContainer>
                 </NavDropdown>
 
             </Nav>
