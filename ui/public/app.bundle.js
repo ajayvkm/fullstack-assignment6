@@ -1518,7 +1518,7 @@ function _graphQLFetch() {
             variables = _args.length > 1 && _args[1] !== undefined ? _args[1] : {};
             _context.prev = 1;
             _context.next = 4;
-            return fetch('http://localhost:3001/graphql', {
+            return fetch('http://localhost:3000/graphql', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'

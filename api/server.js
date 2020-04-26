@@ -7,13 +7,13 @@ const app = express();
 
 installHandler(app);
 
-const port = process.env.API_SERVER_PORT || 3001;
+const port = process.env.API_SERVER_PORT || 3000;
 
 (async function () {
     try {
         await connectToDb();
         app.listen(port, function () {
-            console.log('API server started on port 3001');
+            console.log('API server started on port 3000');
         });
     } catch (err) {
         console.log('ERROR:', err);
