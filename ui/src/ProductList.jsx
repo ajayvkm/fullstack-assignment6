@@ -90,9 +90,10 @@ export default class ProductList extends React.Component {
                         </Panel.Title>
                     </Panel.Heading>
                     <Panel.Body collapsible>
-                        Showing all available products
                     </Panel.Body>
                 </Panel>
+                <span>Showing {products.length} available products</span>
+                <hr/>
                 <ProductTable products={products} deleteProduct={this.deleteProduct}/>
                 <hr/>
                 <ProductAdd createProduct={this.createProduct}/>

@@ -1115,7 +1115,7 @@ function (_React$Component) {
         toggle: true
       }, "Filter")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Panel"].Body, {
         collapsible: true
-      }, "Showing all available products")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ProductTable_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "Showing ", products.length, " available products"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ProductTable_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
         products: products,
         deleteProduct: this.deleteProduct
       }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_ProductAdd_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
